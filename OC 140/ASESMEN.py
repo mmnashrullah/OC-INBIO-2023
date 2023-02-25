@@ -21,8 +21,7 @@ try:
     recList = []
     #iterasi untuk input data sejumlah sampel
     for i in range(limitData):
-        sampleData = int(input(
-            "Data ke-" + str(i+1) + ": "))
+        sampleData = int(input("Data ke-" + str(i+1) + ": "))
         #tulis data ke file
         recData.write(str(sampleData)+"\n")
         #record ke list
