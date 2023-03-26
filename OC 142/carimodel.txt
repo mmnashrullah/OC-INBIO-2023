@@ -1,7 +1,9 @@
 cd lokasi data sekuen;
+log file = 'run paup.log' start;
 execute file.nexus;
 outgroup taksa outgroup;
 nj;
 rateset genes=1:1-jumlah karakter sekuen;
 lset tratio=estimate rmatrix=estimate nst=6 basefreq=estimate rates=siteSpec siterates=rateset:genes shape=estimate pinvar=estimate;
 automodel modelset=j11 aic=yes aicc=yes bic=yes; 
+log stop;
